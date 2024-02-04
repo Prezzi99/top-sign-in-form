@@ -1,0 +1,143 @@
+@font-face {
+    font-family: "Norse-bold";
+    src: url(assets/Norse-Bold.otf);
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    overflow: hidden;
+    font-family: sans-serif;
+}
+
+body > div {
+    height: 100%;
+}
+
+.img-container {
+    width: 35vw;
+    position: relative;
+}
+
+#background-img {
+    height: 100%;
+    width: 100%;
+}
+
+.img-container::before {
+    content: '';
+    position: absolute;
+    top: 20%;
+    background-color: black;
+    opacity: 0.4;
+    width: 100%;
+    height: 100px;
+    padding-bottom: 5px;
+}
+
+#odin-logo {
+    position: absolute;
+    top: 21%;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+#odin-logo img {
+    height: 90px;
+}
+
+#odin-logo::after {
+    font-family: 'Norse-bold', sans-serif;
+    content: "ODIN";
+    color: white;
+    font-size: 50px;
+}
+
+#credits {
+    position: absolute;
+    top: 95%;
+    color: white;
+    width: 100%;
+    text-align: center;
+    font-size: small;
+}
+/* -------- FORM CONTAINER AND DESCENDANTS -------- */
+.container {
+    background-color: #f8f8ff;
+    width: 65vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+form {
+    display: flex;
+    padding-bottom: 19.92px;
+    gap: 100px;
+}
+
+form > div div {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-container {
+    background-color: #FFFF;
+    box-shadow: 0px 2px 9px 0px;
+}
+
+input[type="submit"] {
+    background-color: #596D48;
+    color: white;
+    border: none;
+    width: 150px;
+    padding: 8px 6px;
+    border-radius: 5px;
+    margin-top: 30px;
+    font-weight: bold;
+    outline: none;
+}
+
+input[type="submit"]:hover {
+    cursor: pointer;
+}
+
+.not-container {
+    position: relative;
+    left: 40px;
+}
+
+.first-p {
+    font-weight: bold;
+}
+
+label {
+    font-size: x-small;
+    font-weight: bold;
+}
+
+form input {
+    margin-bottom: 19.92px;
+    border: 1px solid #E5E7EB;
+    border-radius: 3px;
+}
+
+#confirm-pswrd, #password {
+    margin-bottom: 0;
+}
+
+input[type="text"]:focus, input[type="password"]:focus {
+    outline-color:  #183efa;
+    box-shadow: 0px 2px 5px 0px;
+}
+
+input:invalid {
+    border: 1px solid red;
+}
+
+p > span:hover {
+    cursor: pointer;
+}
